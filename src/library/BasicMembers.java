@@ -4,7 +4,7 @@ public class BasicMembers extends Members{
     private int maxItemAllowed;
 
     //default constructor
-    BasicMembers(){
+    public BasicMembers(){
         super();
         this.maxItemAllowed=2;
     }

@@ -5,14 +5,14 @@ public class DVD extends Item {
     private String durationInMinutes;
     private int rating;
     //default constructor
-    DVD(){
+    public DVD(){
         super();
         this.director="Unknown";
         this.durationInMinutes="Unknown";
         this.rating=0;
     }
     //parametwrized constructor
-    DVD(int ID, String title, int year, boolean Borrowed, int duration, String director, String durationInMinutes, int rating){
+    public DVD(int ID, String title, int year, boolean Borrowed, int duration, String director, String durationInMinutes, int rating){
         super(int ID, String title, int year, boolean Borrowed, int duration);
         this.director=director;
         this.durationInMinutes=durationInMinutes;

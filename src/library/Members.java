@@ -5,12 +5,12 @@ public class Members {
  String name;
 
  //default constructor
- Members(){
+ public Members(){
   this.ID=0;
   this.name="Unknown";
  }
  //parameterized constructor
- Members(int ID, String name){
+ public Members(int ID, String name){
   this.ID=ID;
   this.name=name;
  }

@@ -2,7 +2,8 @@ package library;
 
 public class AdvancedMembers extends Members{
     private int maxItemAllowed;
-    BasicMembers(){
+    // default constructor
+    public BasicMembers(){
         super();
         this.maxItemAllowed=5;
     }
