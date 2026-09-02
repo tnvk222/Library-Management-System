@@ -16,4 +16,7 @@ public class Magazine extends Item {
         this.publisher=publisher;
         this.releasedNumber=numberReleased;
     }
+    //getters
+    public String getPublisher() {return publisher;}
+    public int getReleasedNumber() {return releasedNumber;}
 }
