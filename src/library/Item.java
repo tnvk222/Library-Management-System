@@ -29,6 +29,15 @@ public class Item {
     public boolean getIsBorrowrd(){return this.isBorrowed;}
     public int getBorrowingDuration(){return this.borrowingDuration;}
 
+    //setters
+    public void setID(int ID){this.ID=ID;}
+    public void setTitle(String title){this.title=title;}
+    public void setYearPublished(int year){this.yearPublished=year;}
+    public void setIsBorrowed(boolean isBorrowed){this.isBorrowed=isBorrowed;}
+    public void setBorrowingDuration(int borrowingDuration){this.borrowingDuration=borrowingDuration;}
+
+
+
 
 
 }
