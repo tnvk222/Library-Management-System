@@ -42,4 +42,17 @@ public class Book extends Item{
         System.out.print("Enter the genre of the book: ");
         setGenre(genre= input.next());
     }
+    @Override
+    public void display() {
+        System.out.println("BOOK");
+        System.out.println("   ID: " + getID());
+        System.out.println("   Title: " + getTitle());
+        System.out.println("   Year: " + getYearPublished());
+        System.out.println("   Borrowed: " + (getIsBorrowed() ? "Yes" : "No"));
+        System.out.println("   Borrowing Duration: " + getBorrowingDuration() + " days");
+        System.out.println("   Author: " + author);
+        System.out.println("   Pages: " + pages);
+        System.out.println("   Genre: " + genre);
+        System.out.println("   --------------------");
+    }
 }
