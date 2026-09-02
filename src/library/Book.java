@@ -23,7 +23,12 @@ public class Book extends Item{
     public String getAuthor(){return this.author;}
     public int getPages(){return this.pages;}
     public String genre(){return this.genre;}
-    
+
+    //setters
+    public void setAuthor(String author){this.author=author;}
+    public void setPages(int pages){this.pages=pages;}
+    public void setGenre(String genre){this.genre=genre;}
+
 
 
 }
