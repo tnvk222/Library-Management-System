@@ -19,4 +19,8 @@ public class Magazine extends Item {
     //getters
     public String getPublisher() {return publisher;}
     public int getReleasedNumber() {return releasedNumber;}
+
+    //setters
+    public void setPublisher(String publisher) {this.publisher = publisher;}
+    public void setReleasedNumber(int releasedNumber) {this.releasedNumber = releasedNumber;}
 }
