@@ -11,9 +11,9 @@ public class Item {
     public Item(){
         this.ID=0;
         this.title="Unknown";
-        this.yearPublished=0000;
-        this.isBorrowed=False;
-        this.borrowingDuration=0
+        this.yearPublished=0;
+        this.isBorrowed=false;
+        this.borrowingDuration=0;
     }
     public Item(int ID, String title, int year, boolean Borrowed, int duration){
         this.ID=ID;
