@@ -1,5 +1,7 @@
 package library;
 
+import java.util.Scanner;
+
 public abstract class Item {
     private int ID;
     private String title;
@@ -35,9 +37,4 @@ public abstract class Item {
     public void setYearPublished(int year){this.yearPublished=year;}
     public void setIsBorrowed(boolean isBorrowed){this.isBorrowed=isBorrowed;}
     public void setBorrowingDuration(int borrowingDuration){this.borrowingDuration=borrowingDuration;}
-    
-
-
-
-
-}
+    }
