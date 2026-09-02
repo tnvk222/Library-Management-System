@@ -3,7 +3,7 @@ package library;
 public class IntermediateMemmebers extends Members{
     private int maxItemAllowed;
     //default constructor
-    public BasicMembers(){
+    public IntermediateMemmebers(){
         super();
         this.maxItemAllowed=3;
     }
