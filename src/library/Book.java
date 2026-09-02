@@ -19,4 +19,11 @@ public class Book extends Item{
         this.pages=pages;
         this.genre=genre;
     }
+    //getters
+    public String getAuthor(){return this.author;}
+    public int getPages(){return this.pages;}
+    public String genre(){return this.genre;}
+    
+
+
 }
