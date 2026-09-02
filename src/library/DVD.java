@@ -18,4 +18,8 @@ public class DVD extends Item {
         this.durationInMinutes=durationInMinutes;
         this.rating=rating;
     }
+    //getters
+    public String getDirector() {return this.director;}
+    public String getDurationInMinutes() {return this.durationInMinutes;}
+    public int getRating() {return this.ratingating;}
 }
