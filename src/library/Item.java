@@ -22,4 +22,13 @@ public class Item {
         this.isBorrowed=Borrowed;
         this.borrowingDuration=duration;
     }
+    //getters
+    public int getID(){return this.ID;}
+    public String getTitle(){return this.title;}
+    public int getYearPublished(){return this.yearPublished;}
+    public boolean getIsBorrowrd(){return this.isBorrowed;}
+    public int getBorrowingDuration(){return this.borrowingDuration;}
+
+
+
 }
