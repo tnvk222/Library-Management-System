@@ -14,7 +14,7 @@ public class Book extends Item{
     }
     //parametwrized constructor
     public Book(int ID, String title, int year, boolean Borrowed, int duration, String author, int pages, String genre){
-        super(int ID, String title, int year, boolean Borrowed, int duration);
+        super(ID, title,year, Borrowed, duration);
         this.author=author;
         this.pages=pages;
         this.genre=genre;

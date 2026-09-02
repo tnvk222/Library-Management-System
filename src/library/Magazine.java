@@ -8,11 +8,11 @@ public class Magazine extends Item {
     public Magazine(){
         super();
         this.publisher="Unknown";
-        this.releasedNumber=0
+        this.releasedNumber=0;
     }
     //parameterized constructor
     public Magazine(int ID, String title, int year, boolean Borrowed, int duration, String publisher, int numberReleased){
-        super(int ID, String title, int year, boolean Borrowed, int duration);
+        super(ID, title,year, Borrowed, duration);
         this.publisher=publisher;
         this.releasedNumber=numberReleased;
     }

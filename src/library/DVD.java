@@ -13,7 +13,7 @@ public class DVD extends Item {
     }
     //parametwrized constructor
     public DVD(int ID, String title, int year, boolean Borrowed, int duration, String director, String durationInMinutes, int rating){
-        super(int ID, String title, int year, boolean Borrowed, int duration);
+        super(ID, title,year, Borrowed, duration);
         this.director=director;
         this.durationInMinutes=durationInMinutes;
         this.rating=rating;
