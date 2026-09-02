@@ -8,4 +8,6 @@ public class BasicMembers extends Members{
         super();
         this.maxItemAllowed=2;
     }
+    //getter
+    public int getMaxItemAllowed(){return maxItemAllowed;}
 }

@@ -7,4 +7,6 @@ public class AdvancedMembers extends Members{
         super();
         this.maxItemAllowed=5;
     }
+    public int getMaxItemAllowed(){return maxItemAllowed;}
+
 }
