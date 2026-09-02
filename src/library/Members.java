@@ -17,4 +17,7 @@ public class Members {
  //getters
  public int getID(){return ID;}
  public String getName(){return name;}
+ //setters
+ public void setID(int ID) {this.ID = ID;}
+ public void setName(String name) {this.name = name;}
 }
