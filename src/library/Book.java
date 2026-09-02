@@ -30,4 +30,16 @@ public class Book extends Item{
     public void setAuthor(String author){this.author=author;}
     public void setPages(int pages){this.pages=pages;}
     public void setGenre(String genre){this.genre=genre;}
+
+    @Override
+    public void input(){
+        Scanner input=new Scanner(System.in);
+        String author,genre;int pages;
+        System.out.print("Enter the author of the book: ");
+        setAuthor(author=input.next());
+        System.out.print("Enter the pages of the book: ");
+        setPages(pages= input.nextInt());
+        System.out.print("Enter the genre of the book: ");
+        setGenre(genre= input.next());
+    }
 }
