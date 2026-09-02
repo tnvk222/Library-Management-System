@@ -1,6 +1,6 @@
 package library;
 
-public class Members {
+public abstract class Members {
  int ID;
  String name;
 

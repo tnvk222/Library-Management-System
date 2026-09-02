@@ -1,6 +1,6 @@
 package library;
 
-public class Item {
+public abstract class Item {
     private int ID;
     private String title;
     private int yearPublished;
@@ -35,7 +35,7 @@ public class Item {
     public void setYearPublished(int year){this.yearPublished=year;}
     public void setIsBorrowed(boolean isBorrowed){this.isBorrowed=isBorrowed;}
     public void setBorrowingDuration(int borrowingDuration){this.borrowingDuration=borrowingDuration;}
-
+    
 
 
 
