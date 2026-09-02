@@ -37,4 +37,7 @@ public abstract class Item {
     public void setYearPublished(int year){this.yearPublished=year;}
     public void setIsBorrowed(boolean isBorrowed){this.isBorrowed=isBorrowed;}
     public void setBorrowingDuration(int borrowingDuration){this.borrowingDuration=borrowingDuration;}
+
+    public abstract void input();
+    public abstract void display();
     }
