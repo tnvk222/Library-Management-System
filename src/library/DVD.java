@@ -22,4 +22,8 @@ public class DVD extends Item {
     public String getDirector() {return this.director;}
     public String getDurationInMinutes() {return this.durationInMinutes;}
     public int getRating() {return this.ratingating;}
+    //setters
+    public void setDirector(String director) {this.director = director;}
+    public void setDurationInMinutes(String durationInMinutes) {this.durationInMinutes = durationInMinutes;}
+    public void setRating(int rating) {this.rating = rating;}
 }
