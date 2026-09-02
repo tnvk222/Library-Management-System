@@ -1,5 +1,7 @@
 package library;
 
+import java.util.Scanner;
+
 public class Book extends Item{
     private String author;
     private int pages;
@@ -12,7 +14,7 @@ public class Book extends Item{
         this.pages=0;
         this.genre="Unknown";
     }
-    //parametwrized constructor
+    //parameterized constructor
     public Book(int ID, String title, int year, boolean Borrowed, int duration, String author, int pages, String genre){
         super(ID, title,year, Borrowed, duration);
         this.author=author;
@@ -22,13 +24,10 @@ public class Book extends Item{
     //getters
     public String getAuthor(){return this.author;}
     public int getPages(){return this.pages;}
-    public String genre(){return this.genre;}
+    public String getGenre(){return this.genre;}
 
     //setters
     public void setAuthor(String author){this.author=author;}
     public void setPages(int pages){this.pages=pages;}
     public void setGenre(String genre){this.genre=genre;}
-
-
-
 }
