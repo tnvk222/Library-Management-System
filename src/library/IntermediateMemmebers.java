@@ -1,4 +1,4 @@
 package library;
 
-public class IntermediateMemmebers {
+public class IntermediateMemmebers extends Members{
 }

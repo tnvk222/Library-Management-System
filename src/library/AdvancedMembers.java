@@ -1,4 +1,4 @@
 package library;
 
-public class AdvancedMembers {
+public class AdvancedMembers extends Members{
 }

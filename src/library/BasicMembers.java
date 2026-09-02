@@ -1,4 +1,4 @@
 package library;
 
-public class BasicMembers {
+public class BasicMembers extends Members{
 }
