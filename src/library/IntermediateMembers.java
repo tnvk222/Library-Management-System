@@ -1,9 +1,9 @@
 package library;
 
-public class IntermediateMemmebers extends Members{
+public class IntermediateMembers extends Members{
     private int maxItemAllowed;
     //default constructor
-    public IntermediateMemmebers(){
+    public IntermediateMembers(){
         super();
         this.maxItemAllowed=3;
     }
