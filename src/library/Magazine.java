@@ -1,6 +1,6 @@
 package library;
 
 public class Magazine extends Item {
-    String publisher;
-    int releasedNumber;
+    private String publisher;
+    private int releasedNumber;
 }

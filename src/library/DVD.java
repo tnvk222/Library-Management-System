@@ -1,7 +1,7 @@
 package library;
 
 public class DVD extends Item {
-    String director;
-    String durationInMinutes;
-    int rating;
+    private String director;
+    private String durationInMinutes;
+    private int rating;
 }
