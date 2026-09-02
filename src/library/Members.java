@@ -14,4 +14,7 @@ public class Members {
   this.ID=ID;
   this.name=name;
  }
+ //getters
+ public int getID(){return ID;}
+ public String getName(){return name;}
 }
