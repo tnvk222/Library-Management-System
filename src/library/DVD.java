@@ -38,5 +38,16 @@ public class DVD extends Item {
         System.out.print("Enter duration (in minutes): ");
         setDurationInMinutes(duration=input.nextInt());
     }
-
+    public void display(){
+            System.out.println("🎬 DVD");
+            System.out.println("   ID: " + getID());
+            System.out.println("   Title: " + getTitle());
+            System.out.println("   Year: " + getYearPublished());
+            System.out.println("   Borrowed: " + (getIsBorrowed() ? "Yes" : "No"));
+            System.out.println("   Duration (days): " + getBorrowingDuration());
+            System.out.println("   Director: " + getDirector());
+            System.out.println("   Rating: " + getRating() + "/10");
+            System.out.println("   Runtime: " + getDurationInMinutes() + " minutes");
+            System.out.println("   --------------------");
+    }
 }
