@@ -20,4 +20,5 @@ public abstract class Members {
  //setters
  public void setID(int ID) {this.ID = ID;}
  public void setName(String name) {this.name = name;}
+ public abstract int getMaxItemAllowed();
 }

@@ -7,6 +7,7 @@ public class IntermediateMembers extends Members{
         super();
         this.maxItemAllowed=3;
     }
+    @Override
     public int getMaxItemAllowed(){return maxItemAllowed;}
 
 }

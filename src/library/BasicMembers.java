@@ -9,5 +9,6 @@ public class BasicMembers extends Members{
         this.maxItemAllowed=2;
     }
     //getter
+    @Override
     public int getMaxItemAllowed(){return maxItemAllowed;}
 }
