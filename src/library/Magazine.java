@@ -32,5 +32,16 @@ public class Magazine extends Item {
         System.out.print("Enter release number: ");
         setReleasedNumber(released= input.nextInt());
     }
-
+    @Override
+    public void display() {
+        System.out.println("📰 MAGAZINE");
+        System.out.println("   ID: " + getID());
+        System.out.println("   Title: " + getTitle());
+        System.out.println("   Year: " + getYearPublished());
+        System.out.println("   Borrowed: " + (getIsBorrowed() ? "Yes" : "No"));
+        System.out.println("   Duration: " + getBorrowingDuration() + " days");
+        System.out.println("   Publisher: " + getPublisher());
+        System.out.println("   Release Number: " + getReleasedNumber());
+        System.out.println("   --------------------");
+    }
 }
