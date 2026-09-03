@@ -6,6 +6,8 @@ public class Library {
     public static void main(String[] args){
         ArrayList<Members> m= addMembers();
         ArrayList<Item> i=addLibraryItems();
+        displayAllMembers(m);
+
     }
 
 
@@ -83,5 +85,16 @@ public class Library {
             }
         }
         return membersArrayList;
+    }
+    public static void displayAllMembers(ArrayList<Members> membersList) {
+        if (membersList == null || membersList.isEmpty()) {
+            System.out.println("📭 No members registered.");
+            return;
+        }
+        System.out.println("\n📋 MEMBERS LIST (" + membersList.size() + " members)");
+        for (Members member : membersList) {
+            String type = member.getClass().getSimpleName();
+            System.out.println("   " + type + " ID: " + member.getID() + ", Name: " + member.getName() + ", Max Items: " + member.getMaxItemAllowed());
+        }
     }
 }
