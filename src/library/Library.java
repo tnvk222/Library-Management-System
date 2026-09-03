@@ -7,6 +7,7 @@ public class Library {
         ArrayList<Members> m= addMembers();
         ArrayList<Item> i=addLibraryItems();
         displayAllMembers(m);
+        displayAllItems(i);
 
     }
 
@@ -96,5 +97,31 @@ public class Library {
             String type = member.getClass().getSimpleName();
             System.out.println("   " + type + " ID: " + member.getID() + ", Name: " + member.getName() + ", Max Items: " + member.getMaxItemAllowed());
         }
+    }
+    public static void displayAllItems(ArrayList<Item> itemsList) {
+        if (itemsList == null || itemsList.isEmpty()) {
+            System.out.println("📭 No items in the library.");
+            return;
+        }
+        System.out.println("\n📚 LIBRARY ITEMS (" + itemsList.size() + " items)");
+        int bookCount = 0, dvdCount = 0, magazineCount = 0;
+        for (Item item : itemsList) {
+            if (item instanceof Book) {
+                bookCount++;
+                System.out.println("\n📖 BOOK #" + bookCount);
+            } else if (item instanceof DVD) {
+                dvdCount++;
+                System.out.println("\n🎬 DVD #" + dvdCount);
+            } else if (item instanceof Magazine) {
+                magazineCount++;
+                System.out.println("\n📰 MAGAZINE #" + magazineCount);
+            }
+            item.display();  // ✅ Calls the correct display() method for each type
+        }
+        System.out.println("\n📊 SUMMARY");
+        System.out.println("   Total Items: " + itemsList.size());
+        System.out.println("   Books: " + bookCount);
+        System.out.println("   DVDs: " + dvdCount);
+        System.out.println("   Magazines: " + magazineCount);
     }
 }
