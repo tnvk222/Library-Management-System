@@ -27,4 +27,16 @@ public class DVD extends Item {
     public void setDirector(String director) {this.director = director;}
     public void setDurationInMinutes(int durationInMinutes) {this.durationInMinutes = durationInMinutes;}
     public void setRating(int rating) {this.rating = rating;}
+    @Override
+    public void input(){
+        Scanner input=new Scanner(System.in);
+        String director;int duration,rating;
+        System.out.print("Enter director: ");
+        setDirector(director=input.next());
+        System.out.print("Enter rating (1-10): ");
+        setRating(rating=input.nextInt());
+        System.out.print("Enter duration (in minutes): ");
+        setDurationInMinutes(duration=input.nextInt());
+    }
+
 }
