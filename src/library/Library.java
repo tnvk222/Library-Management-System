@@ -42,6 +42,43 @@ public class Library {
                 System.out.println(" Item added! ID: " + a.getID() + " | Title: " + a.getTitle());
                 }
         }
+        ArrayList<Members> m= addMembers();
     }
 
+
+
+
+
+
+    public static ArrayList<Members> addMembers(){
+        Scanner input=new Scanner(System.in);
+        int ID=0;
+        String name;
+        Members members =null;
+        ArrayList<Members> membersArrayList=new ArrayList<>();
+        while(true){
+            System.out.print("add a member name or press 'exit' to finish: ");
+            name=input.next();
+            if(name.equals("exit")) break;
+            else{
+                ID++; int chooseMemberType;
+                System.out.println("Membership Type\n1. Basic($10)\n2. Intermediate($30)\n3. Advanced($50)\nchoose: ");
+                chooseMemberType=input.nextInt();
+                if(chooseMemberType == 1){
+                    members=new BasicMembers();
+                }
+                else if(chooseMemberType == 2){
+                    members=new IntermediateMembers();
+                }
+                else if(chooseMemberType == 3){
+                    members=new AdvancedMembers();
+                }
+                members.setID(ID);
+                members.setName(name);
+                members.getMaxItemAllowed();
+                membersArrayList.add(members);
+            }
+        }
+        return membersArrayList;
+    }
 }
