@@ -32,6 +32,14 @@ public class Library {
                 else if(choice == 3){
                     a= new Magazine();
                 }
+                a.input();
+                a.setTitle(title);
+                a.setID(ID);
+                a.setBorrowingDuration(duration);
+                a.setYearPublished(year);
+                a.setIsBorrowed(isBorrowed);
+                libraryItems.add(a);
+                System.out.println(" Item added! ID: " + a.getID() + " | Title: " + a.getTitle());
                 }
         }
     }
