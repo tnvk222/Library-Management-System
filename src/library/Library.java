@@ -4,6 +4,15 @@ import java.util.Scanner;
 
 public class Library {
     public static void main(String[] args){
+        ArrayList<Members> m= addMembers();
+        ArrayList<Item> i=addLibraryItems();
+    }
+
+
+
+
+
+    public static  ArrayList<Item> addLibraryItems(){
         Item a=null;
         ArrayList<Item>libraryItems=new ArrayList<>();
         Scanner input= new Scanner(System.in);
@@ -40,16 +49,10 @@ public class Library {
                 a.setIsBorrowed(isBorrowed);
                 libraryItems.add(a);
                 System.out.println(" Item added! ID: " + a.getID() + " | Title: " + a.getTitle());
-                }
+            }
         }
-        ArrayList<Members> m= addMembers();
+        return libraryItems;
     }
-
-
-
-
-
-
     public static ArrayList<Members> addMembers(){
         Scanner input=new Scanner(System.in);
         int ID=0;
